@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rendez-vous</title>
+    <link rel="stylesheet" href="css\stylerdv.css">
+    <script>
+
+        function recuperation(){
+            let nom = document.getElementById("UserName").value;
+            let prenoms = document.getElementById('UserName2').value;
+            let email = document.getElementById('email').value;  
+            let reponse = `Bonjour M/Mme ${nom}, merci de nous avoir contacté, nous vous enverrons une reponse sur votre email qui est ${email}.`;
+            document.getElementById('reponse').innerText = reponse;
+
+            alert(reponse)
+
+        }
+
+    </script>
+    <style>
+        p{
+            position: absolute;
+            left: 200px;
+            bottom: 50px;
+            color: #17a2b8;
+        }
+    </style>
+
+    
+</head>
+<body>
+
+    <div class="home-button">
+        <a href="index.html">Home</a>
+    </div>
+
+    <img src="images\logo.jpg" alt="images de mon domaine">
+    <form action="">
+        <h3>Prenez un rendez-vous</h3>
+        <hr>
+        <div class="name-field">
+            <div>
+                <label for="text">Nom</label>
+                <input type="text" id="UserName" required>
+            </div>
+            <div>
+                <label for="text">Prenoms</label>
+                <input type="text" id="UserName2" required>
+            </div>
+
+        </div>
+        <label for="text">Adresse mail</label>
+        <input type="email" id="email" required>
+
+
+        <label for="text">Motif du rendez-vous</label>
+        <textarea rows="4" id="zone_texte"></textarea>
+        <!-- <input type="text" id="comment"> -->
+    
+        <input id="valider" type="submit" value="Soumettre votre demande" onclick="recuperation()">
+
+    </form>
+<p id="reponse"></p>
+
+</body>
+</html>

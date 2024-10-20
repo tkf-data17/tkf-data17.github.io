@@ -1,0 +1,122 @@
+body{
+    margin: 0;
+    padding: 0;
+    font: 12px;
+    /* background-image: url('img1.jpg');  */
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center; 
+    height: 100vh;
+    margin: 0;; 
+}
+
+img{
+    width: 100px;
+    height: 100px;
+    margin-left: 20px
+}
+
+.photo_de_profil {
+    display: flex;
+    /* justify-content: center; */
+    margin-bottom: 20px;
+
+}
+#profil{
+    position: absolute;
+    width: 200px; 
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #3498db;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    top: 35%;
+    bottom: 50%;
+    left: 400px;
+}
+
+.content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+    ;
+}
+
+.content h1{
+    color: #090110;
+    font-weight: 900;
+    font-style: italic;
+    text-align: center;
+
+}
+.content h2{
+    color: #01010b;
+    font-weight: 500;
+    font-style: italic;
+    text-align: center;
+}
+
+
+
+.home_page{
+    height: 60px;
+    list-style: none;
+    padding: 10px;
+    margin: 40px;
+}
+
+.home_page li{
+    float: left;
+    width: 200px;
+}
+
+.home_page li a:link, .home_page li a:visited{
+    display: block;
+    color:#ffff;
+    background: #293245;
+    padding: 6px 10px;
+    border-right: 1px solid #ffff;
+    text-align: center;
+    text-decoration: none;
+     
+}
+
+.home_page li a:hover {background-color: #199802;}
+.home_page li a:active{background-color: #808080;}
+
+.home_page .menu2{
+    list-style-type: none;
+    display: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+}
+
+.home_page .menu2 li{
+    float: none;
+    margin: 0;
+    padding: 0;
+    border-top:1px solid transparent;
+    border-right: 1px solid transparent;
+
+}
+
+.home_page .menu2 li a:link, .home_page li a:visited{
+    display:block;
+    color:#ffff;
+    text-decoration: none;
+    background-color: 808080;
+
+}
+
+.home_page .menu2 li a:hover{
+    background-color: #199802;
+}
+
+.home_page li:hover .menu2{
+    display: block;
+}
+
+
+/* Mise en forme du formulaire de prise de rendez-vous */
